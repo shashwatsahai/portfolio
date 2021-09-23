@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import "./Navbar.scss";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 const Navbar = () => {
-  var [active, setActive] = useState("#");
+  var [setActive] = useState("#");
 
-  const clickhandler = (ev) => {
-    setActive(ev.target.hash);
-  };
+  // const clickhandler = (ev) => {
+  //   setActive(ev.target.hash);
+  // };
   var Navbar = (
     <nav className="navbar navbar-light navbar-expand-md">
       <button

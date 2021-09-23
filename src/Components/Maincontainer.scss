@@ -42,7 +42,7 @@ body * {
 }
 
 .intro-wrapper {
-  background-color: lightslategrey;
+  // background-color: #b3bdc7;
   border: 1px solid var(--borderColor);
   border-radius: 5px 5px 0 0;
 
@@ -180,7 +180,7 @@ ul {
 
 .anim-typewriter {
   animation: typewriter 4s steps(22) 0.2s 2 alternate both,
-    blinkTextCursor 362ms steps(44) infinite normal;
+    blinkTextCursor 662ms steps(11) infinite normal;
 }
 @keyframes typewriter {
   from {
@@ -206,4 +206,50 @@ ul {
   border: 1.5px solid #17a2b8;
   background-color: #fff;
   position: absolute;
+}
+
+
+.description {
+  text-align: left;
+  .highlight{
+    color: #4e732a !important
+  }
+  .input {
+    color: rgb(168, 18, 18) ;
+  }
+}
+
+
+table{
+  &.techstack{
+    align-items: center;
+    width: 75%;
+    font-size: 1.4rem;
+    margin-left: auto;
+    margin-right: auto;
+    td{
+      border: solid 1px black;
+      width: 33%;
+      padding: 10px;
+    }
+      
+    // td {
+    //   border: 1px solid black;  
+    // }
+  }
+  &.tablinks{
+    width: 100%;
+    font-size: 1.4rem;
+    td{
+      width: 33%;
+    }
+      
+  }
+}
+
+h3.name{
+  font-size: 1.4rem;
+}
+h3{
+  font-size: 1.4rem;
 }
