@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./Contact.scss";
+import Tablinks from "./Tablinks";
 
 class Maincontainer extends Component {
   //   state = {
@@ -53,7 +54,7 @@ class Maincontainer extends Component {
             </div>
             <form action="#" method="post" id="contact_form">
               <div className="namefield">
-                <label for="name"></label>
+                <label htmlFor="name"></label>
                 <input
                   type="text"
                   placeholder="My name is"
@@ -63,7 +64,7 @@ class Maincontainer extends Component {
                 ></input>
               </div>
               <div className="email">
-                <label for="email"></label>
+                <label htmlFor="email"></label>
                 <input
                   type="email"
                   placeholder="My e-mail is"
@@ -73,7 +74,7 @@ class Maincontainer extends Component {
                 ></input>
               </div>
               <div className="telephone">
-                <label for="name"></label>
+                <label htmlFor="name"></label>
                 <input
                   type="text"
                   placeholder="My number is"
@@ -82,24 +83,8 @@ class Maincontainer extends Component {
                   required
                 ></input>
               </div>
-              <div className="subject">
-                <label for="subject"></label>
-                <select
-                  placeholder="Subject line"
-                  name="subject"
-                  id="subject_input"
-                  required
-                >
-                  <option disabled hidden selected>
-                    Subject line
-                  </option>
-                  <option>I'd like to contact for a job</option>
-                  <option>I'd like to </option>
-                  <option>I'd like to make a proposal</option>
-                </select>
-              </div>
               <div className="message">
-                <label for="message"></label>
+                <label htmlFor="message"></label>
                 <textarea
                   name="message"
                   placeholder="I'd like to chat about"
@@ -115,37 +100,10 @@ class Maincontainer extends Component {
             </form>
           </div>
 
-          <h3 className="description">
-            <span className="highlight">Shashwat@Sahai:~$</span>{" "}
-            <span className="input">
-              For More Information Follow the Links
-              <br />
-              <br />
-            </span>
-          </h3>
-          <table className="tablinks">
-            <tr>
-              <td>
-                <a href="/projects">
-                  <u>Projects</u>
-                </a>
-              </td>
-              <td>
-                <a href="/contact">
-                  <u>Contact</u>
-                </a>
-              </td>
-              <td>
-                <a href="/Blog">
-                  <u>Blog</u>
-                </a>
-              </td>
-            </tr>
-          </table>
+         <Tablinks/>
           <br />
           <br />
         </div>
-        <div></div>
       </div>
     );
     return maincontainer;

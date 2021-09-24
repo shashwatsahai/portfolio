@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Tablinks from "./Tablinks";
 import "./Contact.scss";
 
 class Maincontainer extends Component {
@@ -53,7 +54,7 @@ class Maincontainer extends Component {
             </div>
             <form action="#" method="post" id="contact_form">
               <div className="namefield">
-                <label for="name"></label>
+                <label htmlFor="name"></label>
                 <input
                   type="text"
                   placeholder="My name is"
@@ -63,7 +64,7 @@ class Maincontainer extends Component {
                 ></input>
               </div>
               <div className="email">
-                <label for="email"></label>
+                <label htmlFor="email"></label>
                 <input
                   type="email"
                   placeholder="My e-mail is"
@@ -73,7 +74,7 @@ class Maincontainer extends Component {
                 ></input>
               </div>
               <div className="telephone">
-                <label for="name"></label>
+                <label htmlFor="name"></label>
                 <input
                   type="text"
                   placeholder="My number is"
@@ -83,23 +84,23 @@ class Maincontainer extends Component {
                 ></input>
               </div>
               <div className="subject">
-                <label for="subject"></label>
+                <label htmlFor="subject"></label>
                 <select
                   placeholder="Subject line"
                   name="subject"
                   id="subject_input"
                   required
                 >
-                  <option disabled hidden selected>
+                  <option disabled hidden defaultValue>
                     Subject line
                   </option>
-                  <option>I'd like to start a project</option>
-                  <option>I'd like to ask a question</option>
-                  <option>I'd like to make a proposal</option>
+                  <option>I'd like to contact for a job</option>
+                  <option>I'd like to contact for a freelance job</option>
+                  <option>Something else</option>
                 </select>
               </div>
               <div className="message">
-                <label for="message"></label>
+                <label htmlFor="message"></label>
                 <textarea
                   name="message"
                   placeholder="I'd like to chat about"
@@ -114,34 +115,7 @@ class Maincontainer extends Component {
               </div>
             </form>
           </div>
-
-          <h3 className="description">
-            <span className="highlight">Shashwat@Sahai:~$</span>{" "}
-            <span className="input">
-              For More Information Follow the Links
-              <br />
-              <br />
-            </span>
-          </h3>
-          <table className="tablinks">
-            <tr>
-              <td>
-                <a href="/projects">
-                  <u>Projects</u>
-                </a>
-              </td>
-              <td>
-                <a href="/contact">
-                  <u>Contact</u>
-                </a>
-              </td>
-              <td>
-                <a href="/Blog">
-                  <u>Blog</u>
-                </a>
-              </td>
-            </tr>
-          </table>
+          <Tablinks/>
           <br />
           <br />
         </div>

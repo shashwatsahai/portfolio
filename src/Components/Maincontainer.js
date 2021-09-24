@@ -1,5 +1,7 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import "./Maincontainer.scss";
+import Tablinks from "./Tablinks";
 
 class Maincontainer extends Component {
   state = {
@@ -52,15 +54,23 @@ class Maincontainer extends Component {
             Hello! My Name is Shashwat Sahai, currently working as a Backend
             Developer. <br />
             <br />I have worked on backend and content development of apps like{" "}
-            <a href="https://longwalks.com/" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://longwalks.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <u>Longwalks</u>
             </a>{" "}
             and{" "}
-            <a href="https://www.splashlearn.com/" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://www.splashlearn.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <u>Splashlearn</u>
             </a>
-            <br /> <br /> I have worked with Technologies like Node.js, Express.js,
-            MongoDB, Neo4j, Elasticsearch etc.
+            <br /> <br /> I have worked with Technologies like Node.js,
+            Express.js, MongoDB, Neo4j, Elasticsearch etc.
           </h3>
           <br />
 
@@ -73,59 +83,28 @@ class Maincontainer extends Component {
           </h3>
           <table className="techstack">
             <tbody>
-            <tr>
-              <td>Nodejs</td>
-              <td>ExpressJs</td>
-              <td>Neo4j</td>
-            </tr>
-            <tr>
-              <td>MongoDB</td>
-              <td>Firebase</td>
-              <td>AWS</td>
-            </tr>
-            <tr>
-              <td>ELK</td>
-              <td>Websockets</td>
-              <td>Redis</td>
-            </tr>
+              <tr>
+                <td>Nodejs</td>
+                <td>ExpressJs</td>
+                <td>Neo4j</td>
+              </tr>
+              <tr>
+                <td>MongoDB</td>
+                <td>Firebase</td>
+                <td>AWS</td>
+              </tr>
+              <tr>
+                <td>ELK</td>
+                <td>Websockets</td>
+                <td>Redis</td>
+              </tr>
             </tbody>
           </table>
           <br />
-
-          <h3 className="description">
-            <span className="highlight">Shashwat@Sahai:~$</span>{" "}
-            <span className="input">
-              For More Information Follow the Links
-              <br />
-             
-            </span>
-          </h3>
-          <table className="tablinks">
-          <thead>
-            <tr>
-              <td>
-                <a href="/projects">
-                  <u>Projects</u>
-                </a>
-              </td>
-              <td>
-                <a href="/contact">
-                  <u>Contact</u>
-                </a>
-              </td>
-              <td>
-  
-                <a href="/Blog">
-                  <u>Blog</u>
-                </a>
-              </td>
-            </tr>
-            </thead>
-          </table>
+          <Tablinks/>
           <br />
           <br />
         </div>
-        <div></div>
       </div>
     );
     return maincontainer;
