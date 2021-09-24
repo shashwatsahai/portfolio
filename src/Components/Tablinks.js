@@ -16,19 +16,19 @@ class Tablinks extends Component {
           <thead>
             <tr>
               <td>
-                <a href="/projects">
+                <Link to="/projects" component={Projects}>
                   <u>Projects</u>
-                </a>
+                </Link>
               </td>
               <td>
-                <a href="/contact">
+                <Link to="/contact" component={Contact}>
                   <u>Contact</u>
-                </a>
+                </Link>
               </td>
               <td>
-                <a href="/Blog">
+                <Link to="/blog" component={Projects}>
                   <u>Blog</u>
-                </a>
+                </Link>
               </td>
             </tr>
           </thead>

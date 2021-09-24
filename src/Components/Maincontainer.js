@@ -1,11 +1,11 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import "./Maincontainer.scss";
 import Tablinks from "./Tablinks";
 
 class Maincontainer extends Component {
   state = {
-    text: ["Web Developer", "Backend Developer", "Software Engineer"],
+    text: ["Backend Developer", "Software Engineer","Web Developer"],
     curIndex: 0,
   };
 
@@ -17,7 +17,10 @@ class Maincontainer extends Component {
     var index = this.state.curIndex;
 
     var textToShow = this.state.text[index];
-
+    // function refreshPage() {
+    //   window.location.reload(false);
+    // }
+    
     const maincontainer = (
       <div>
         <div className="intro-wrapper">
@@ -51,8 +54,8 @@ class Maincontainer extends Component {
             </span>
           </h3>
           <h3>
-            Hello! My Name is Shashwat Sahai, currently working as a Backend
-            Developer. <br />
+            Hi! I'm Shashwat, Backend
+            Developer from India. I code and I know things <br />
             <br />I have worked on backend and content development of apps like{" "}
             <a
               href="https://longwalks.com/"

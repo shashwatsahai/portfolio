@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./Contact.scss";
 import Tablinks from "./Tablinks";
+import { Link } from "react-router-dom";
 
 class Maincontainer extends Component {
   //   state = {
@@ -21,13 +22,13 @@ class Maincontainer extends Component {
       <div>
         <div className="intro-wrapper">
           <div className="nav-wrapper">
-            <a href="/home">
+            <Link to="/home" Component={Maincontainer}>
               <div className="dots-wrapper">
                 <div id="dot-1" className="browser-dot"></div>
                 <div id="dot-2" className="browser-dot"></div>
                 <div id="dot-3" className="browser-dot"></div>
               </div>
-            </a>
+            </Link>
           </div>
 
           <h3 className="description">

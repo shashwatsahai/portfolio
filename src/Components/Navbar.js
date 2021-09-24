@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Navbar.scss";
 import { NavLink } from "react-router-dom";
 const Navbar = () => {
-  var [setActive] = useState("#");
+  // var [setActive] = useState("#");
 
   // const clickhandler = (ev) => {
   //   setActive(ev.target.hash);
