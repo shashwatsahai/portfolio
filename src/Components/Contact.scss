@@ -10,6 +10,11 @@ body {
   background: #F2F3EB;
 }
 
+a:visited {
+    color: inherit;
+    text-decoration: none;
+}
+
 button {
   overflow: visible;
 }

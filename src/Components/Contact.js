@@ -3,7 +3,7 @@ import Tablinks from "./Tablinks";
 import "./Contact.scss";
 import { Link } from "react-router-dom";
 
-class Maincontainer extends Component {
+class Contact extends Component {
   //   state = {
   //     text: ["Web Developer", "Backend Developer", "Software Engineer"],
   //     curIndex: 0,
@@ -22,7 +22,7 @@ class Maincontainer extends Component {
       <div>
         <div className="intro-wrapper">
           <div className="nav-wrapper">
-            <Link to="/home" Component={Maincontainer}>
+            <Link to="/home">
               <div className="dots-wrapper">
                 <div id="dot-1" className="browser-dot"></div>
                 <div id="dot-2" className="browser-dot"></div>
@@ -127,4 +127,4 @@ class Maincontainer extends Component {
   }
 }
 
-export default Maincontainer;
+export default Contact;

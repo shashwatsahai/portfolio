@@ -3,7 +3,7 @@ import "./Contact.scss";
 import Tablinks from "./Tablinks";
 import { Link } from "react-router-dom";
 
-class Maincontainer extends Component {
+class Projects extends Component {
   //   state = {
   //     text: ["Web Developer", "Backend Developer", "Software Engineer"],
   //     curIndex: 0,
@@ -22,7 +22,7 @@ class Maincontainer extends Component {
       <div>
         <div className="intro-wrapper">
           <div className="nav-wrapper">
-            <Link to="/home" Component={Maincontainer}>
+            <Link to="/home">
               <div className="dots-wrapper">
                 <div id="dot-1" className="browser-dot"></div>
                 <div id="dot-2" className="browser-dot"></div>
@@ -38,13 +38,15 @@ class Maincontainer extends Component {
             </span>
           </h3>
           <h3>
-          <i className="fa fa-envelope"></i>: ssahai97@gmail.com
+          <i className="fa fa-github"></i>: <a href="https://github.com/shashwatsahai/"
+              target="_blank"
+              rel="noopener noreferrer">github.com/shashwatsahai</a>
           <br/>
           <br/>
           <i className="fa fa-phone"></i>: +91-8376869759
           </h3>
 
-          <div id="container">
+          {/* <div id="container">
             <h1>&bull; Lets Talk &bull;</h1>
             <div className="underline"></div>
             <div className="icon_wrapper">
@@ -99,7 +101,7 @@ class Maincontainer extends Component {
                 <input type="submit" value="Send Message" id="form_button" />
               </div>
             </form>
-          </div>
+          </div> */}
 
          <Tablinks/>
           <br />
@@ -111,4 +113,4 @@ class Maincontainer extends Component {
   }
 }
 
-export default Maincontainer;
+export default Projects;
