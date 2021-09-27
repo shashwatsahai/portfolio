@@ -51,7 +51,7 @@ class Projects extends Component {
 
           <div id="projects">
             <h3>
-              <a href="/projects/chess">
+              <a href="/projects/chess/">
                 1. Chess- <br />
               </a>
               Multiplayer Chess App with Socket.io and Express
@@ -66,7 +66,7 @@ class Projects extends Component {
               </a>
               <br />
               <br />
-              <a href="/projects/chat">
+              <a href="/projects/chat/">
                 2. Chatroom- <br />
               </a>
               Chat Application with room functionality using Node.js and
