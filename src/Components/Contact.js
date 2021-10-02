@@ -44,7 +44,7 @@ class Contact extends Component {
           <i className="fa fa-phone"></i>: +91-8376869759
           </h3>
 
-          <div id="container">
+          {/* <div id="container">
             <h1>&bull; Lets Talk &bull;</h1>
             <div className="underline"></div>
             <div className="icon_wrapper">
@@ -115,7 +115,7 @@ class Contact extends Component {
                 <input type="submit" value="Send Message" id="form_button" />
               </div>
             </form>
-          </div>
+          </div> */}
           <Tablinks/>
           <br />
           <br />
